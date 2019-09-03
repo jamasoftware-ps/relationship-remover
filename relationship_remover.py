@@ -44,7 +44,7 @@ def get_instance_url(credentials_object):
         if instance_url.endswith('/'):
             instance_url = instance_url[:-1]
         # user forget to put the "https://" bit?
-        if not instance_url.startswith('https://') or instance_url.startswith('http://'):
+        if not instance_url.startswith('https://') and not instance_url.startswith('http://'):
             # if forgotten then ASSuME that this is an https server.
             instance_url = 'https://' + instance_url
         # also allow for shorthand cloud instances
