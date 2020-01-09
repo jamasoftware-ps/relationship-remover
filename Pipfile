@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-py-jama-rest-client = "1.8.0"
+py-jama-rest-client = "==1.8.0"
 
 [dev-packages]
 
